@@ -7,13 +7,6 @@ spec:
   - name: mycontainer
     image: redis
     env:
-      - name: SECRET_USERNAME
-        valueFrom:
-          secretKeyRef:
-            name: mysecret
-            key: username
-            optional: false # same as default; "mysecret" must exist
-                            # and include a key named "username"
       - name: SECRET_PASSWORD
         valueFrom:
           secretKeyRef:
