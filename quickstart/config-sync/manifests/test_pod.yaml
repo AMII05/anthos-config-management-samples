@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: disallowed-example
+spec:
+  containers:
+  - env:
+    - name: MY_PASSWORD
+      valueFrom:
+        secretKeyRef:
+          key: password
+          name: mysecret
+    image: redis
+    name: test
