@@ -33,8 +33,3 @@ metadata:
       }"
 spec:
   enforcementAction: deny
-  match:
-    excludedNamespaces:
-      - kube-system
-      - config-management-system
-      - asm-system
