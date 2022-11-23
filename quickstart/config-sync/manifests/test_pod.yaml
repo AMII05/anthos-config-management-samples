@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: disallowed-example3
+  name: disallowed-example4
 spec:
   containers:
   - env:
