@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: no-securitycontext
+spec:
+  containers:
+    image: redis
+    name: test
