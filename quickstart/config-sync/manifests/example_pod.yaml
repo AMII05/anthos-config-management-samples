@@ -6,12 +6,12 @@ spec:
   containers:
   - name: mycontainer
     image: redis
-    env:
-      - name: SECRET_PASSWORD
-        valueFrom:
-          secretKeyRef:
-            name: mysecret
-            key: password
-            optional: false # same as default; "mysecret" must exist
+      #env:
+      #- name: SECRET_PASSWORD
+      # valueFrom:
+      #   secretKeyRef:
+      #      name: mysecret
+      #      key: password
+      #      optional: false # same as default; "mysecret" must exist
                             # and include a key named "password"
   restartPolicy: Never
