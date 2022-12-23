@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: testpolicy4
+spec:
+  containers:
+  - name: mycontainertest
+    image: redis
+  restartPolicy: Never
