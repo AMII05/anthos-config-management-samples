@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: nginx-test-pod
+  name: nginx-test-pod1
 spec:
   containers:
-  - image: nginx
+  - image: registry.docker.hub.com/nginxtest
     name: nginx
     resources:
       limits:
