@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: nginx-disallowed-pod2
+  name: test-nginx-disallowed-pod
   namespace: hello
 spec:
   containers:
